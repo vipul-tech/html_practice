@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Bold</b>
+    <u>Underline</u>
+    <i>Italics</i>
+    <s>Strikethrough</s>
+    <hr>
+    <p>(a+b)2 = a2 + b2 + 2ab</p>
+    <hr>
+    <p>(a+b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab</p>
+    <hr>
+    <p>CH4 + O2 => H2O + CO2</p>
+    <hr>
+    <p>CH<sub>4</sub> + O<sub>2</sub> => H<sub>2</sub>O + CO<sub>2</sub></p>
+    <hr>
+    <pre>
+        // C++ program to display Prime numbers till N
+#include <bits/stdc++.h>
+using namespace std;
+
+// function to check if a given number is prime
+bool isPrime(int n)
+{
+	// since 0 and 1 is not prime return false.
+	if (n == 1 || n == 0)
+		return false;
+
+	// Run a loop from 2 to n-1
+	for (int i = 2; i < n; i++) {
+		// if the number is divisible by i, then n is not a
+		// prime number.
+		if (n % i == 0)
+			return false;
+	}
+	// otherwise, n is prime number.
+	return true;
+}
+
+// Driver code
+int main()
+{
+	int N = 100;
+
+	// check for every number from 1 to N
+	for (int i = 1; i <= N; i++) {
+		// check if current number is prime
+		if (isPrime(i))
+			cout << i << " ";
+	}
+
+	return 0;
+}
+
+    </pre>
+    <hr>
+    <big>this is big tag</big>
+    <small>this is small tag</small>
+    <hr>
+    <a href="https://www.google.com/">Google</a>
+    <br>
+    <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+    <br>
+    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    <br><hr>
+    <video src="mahi_ve.mp4" autoplay controls loop muted/>
+</body>
+</html>
